@@ -36,7 +36,7 @@ You tell me!
 MIT
 
 # Author
-[Shane](
+[Catalin](https://github.com/Ant-Acid)
 
 # Contributors
 
