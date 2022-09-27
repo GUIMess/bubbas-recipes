@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --bub-color: #000000;
+  --white: rgba(255, 255, 255, 0.937);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #000000;
+}
+
+html,
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+.logo-image {
+  max-width: 300px;
+  width: 100%;
+}
+
+.profile-pic-container {
+  width: 200px;
+  height: 200px;
+  padding-bottom: 20px;
+ 
+}
+
+.profile-pic-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.btn {
+  min-width: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'PP Pangram Sans Rounded', Arial, Helvetica, sans-serif;
+  background: #000000;
+}
+
+.post-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #000000;
+}
+.fw-bold{
+  color: #4920ef;;
+  font-family: 'PP Pangram Sans Rounded', Arial, Helvetica, sans-serif;
+}
+.post-card {
+  width: 800px;
+  max-width: 90vw;
+  margin: 10px 0;
+  overflow: hidden;
+  background: #000000;
+}
+
+.card-img-container {
+  background: #000000;
+}
+
+.post-card img {
+  width: 100%;
+  max-height: 400px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.card-text-container {
+  padding: 1rem;
+  background: #000000;
+}
+
+.card-text-container p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  background: #000000;
+}
+
+.navbar {
+  background-color: var(--bub-color);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.navbar li {
+  margin-left: 20px;
+  font-family: 'PP Pangram Sans Rounded','Roboto', 'Inter', Arial, Helvetica, sans-serif;
+}
+.mb-0{
+  font-family: 'PP Pangram Sans Rounded', 'Roboto', Arial, Helvetica, sans-serif;
+  
+}
+.text-bub {
+  color: #E5C15B;
+  font-family: 'PP Pangram Sans Rounded', 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+
+.navbar img {
+  width: 50px;
+ 
+}
+
+.card {
+  overflow: hidden;
+  background: #000000;
+}
+
+.profile-title {
+  background-color: var(--bub-color);
+  color: var(--white);
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: 'PP Pangram Sans Rounded','Futura', 'Roboto', sans-serif;
+  
+}
+
+.likes-card {
+  max-width: 600px;
+  background: #000000;
+
+}
+/*Media Query*/
+@media (max-width: 768px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 20px 5px;
+  }
+}
