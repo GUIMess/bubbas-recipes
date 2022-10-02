@@ -22,7 +22,7 @@
 # Features
 - [ ] CSS Styling 
 - [X] Implement delete comment functionality
-- [ ] Add profile pic to user profiles 
+- [x] Add profile pic to user profiles 
 - [ ] Allow users to follow other users 
 - [ ] show username and number of likes on feed page
 - [ ] Allow photos to be public/private 
@@ -36,7 +36,7 @@ You tell me!
 MIT
 
 # Author
-[Catalin](https://github.com/Ant-Acid)
+[Catalin Siegling](https://github.com/Ant-Acid)
 
 # Contributors
 
