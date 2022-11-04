@@ -22,10 +22,10 @@ require("./config/passport")(passport);
 //Connect To Database
 connectDB();
 
-//Using EJS for views
+//Setting EJS for views
 app.set("view engine", "ejs");
 
-//Static Folder
+//Using /public as the Static Folder
 app.use(express.static("public"));
 
 //Body Parsing
@@ -35,7 +35,7 @@ app.use(express.json());
 //Logging
 app.use(logger("dev"));
 
-//Use forms for put / delete
+//Use forms for put / delete too
 app.use(methodOverride("_method"));
 
 // Setup Sessions - stored in MongoDB
