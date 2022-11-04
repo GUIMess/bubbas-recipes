@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-console.log("Comment model loaded");
 const CommentSchema = new mongoose.Schema({
   comment: {
     type: String,

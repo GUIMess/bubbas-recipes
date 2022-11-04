@@ -25,9 +25,9 @@
 - [x] Add profile pic to user profiles 
 - [ ] Allow users to follow other users 
 - [ ] show username and number of likes on feed page
-- [ ] Allow photos to be public/private 
+- [ ] Allow recipes to be public/private 
 - [ ] implement like functionality for individual comments
-- [ ] implement like functionality for individual photos 
+- [ ] implement like functionality for individual recipes
 
 # Bugs
 You tell me!
@@ -37,13 +37,6 @@ MIT
 
 # Author
 [Catalin Siegling](https://github.com/Ant-Acid)
-
-# Contributors
-
-
-
-# Acknowledgements
-
 
 
 # Screenshots
@@ -87,26 +80,16 @@ MIT
 - As a user, I want to be able to see all photos by a specific user
 - As a user, I want to be able to see all comments by a specific user
 
-
-# Wireframes
-
-![Wireframe](
-
-# ERD
-
-![ERD](
-
-
 # Future Features
 
-- [ ] Allow photos to be public/private
+- [ ] Allow recipes to be public/private
 - [ ] Allow users to follow other users
-- [ ] Allow users to like photos
+- [ ] Allow users to like recipes
 - [ ] Allow users to like comments
-- [x] Allow users to see all photos
+- [x] Allow users to see all recipes
 - [x] Allow users to see all comments
 - [ ] Allow users to see all users 
-- [ ] Allow users to see all photos by a specific user
+- [ ] Allow users to see all recipes by a specific user
 - [ ] Allow users to see all comments by a specific user
 
 # Planning
@@ -115,22 +98,20 @@ MIT
 - [ ] Create a wireframe
 - [ ] Create an ERD
 - [ ] Create a README.md
-- [ ] Create a .env file
-- [ ] Create a .gitignore file
-- [ ] Create a config folder
-- [ ] Create a controllers folder
-- [ ] Create a models folder
-- [ ] Create a routes folder
-- [ ] Create a views folder
-- [ ] Create a public folder
-- [ ] Create a seed folder
-- [ ] Create a seed.js file
-- [ ] Create a server.js file
-- [ ] Create a package.json file
-- [ ] Create a package-lock.json file
-- [ ] Create a models folder  
-- [ ] Create a user.js file
-- [ ] Create a photo.js file
-- [ ] Create a comment.js file
-- [ ] Create a controllers folder
-- [ ] Create a users.js file
+- [x] Create a .env file
+- [x] Create a .gitignore file
+- [x] Create a config folder
+- [x] Create a controllers folder
+- [x] Create a models folder
+- [x] Create a routes folder
+- [x] Create a views folder
+- [x] Create a public folder
+- [x] Create a server.js file
+- [x] Create a package.json file
+- [x] Create a package-lock.json file
+- [x] Create a models folder  
+- [x] Create a users.js file
+- [x] Create a posts.js file
+- [x] Create a comment.js file
+- [x] Create a controllers folder
+

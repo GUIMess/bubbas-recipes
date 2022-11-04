@@ -1,13 +1,13 @@
 const express = require("express"); // https://expressjs.com/
-const app = express(); // Create Express app
+const app = express(); // https://expressjs.com/en/4x/api.html#app
 const mongoose = require("mongoose"); // https://mongoosejs.com/docs/api.html
-const passport = require("passport"); // Passport is authentication middleware for Node.js
+const passport = require("passport"); // http://www.passportjs.org/docs/
 const session = require("express-session"); // https://www.npmjs.com/package/express-session
 const MongoStore = require("connect-mongo")(session); // https://www.npmjs.com/package/connect-mongo
 const methodOverride = require("method-override"); // https://www.npmjs.com/package/method-override
 const flash = require("express-flash"); // https://www.npmjs.com/package/express-flash
 const logger = require("morgan"); // https://www.npmjs.com/package/morgan
-const connectDB = require("./config/database"); // Connect to database
+const connectDB = require("./config/database"); // Method to connect to DB
 const mainRoutes = require("./routes/main"); // Import main routes
 const postRoutes = require("./routes/posts"); // Import posts routes
 const commentRoutes = require("./routes/comments"); // Import comments routes
@@ -63,5 +63,5 @@ app.use("/users", userRoutes);
 
 //Server Running
 app.listen(process.env.PORT || 2121, () => {
-  console.log("Server is running, you better catch it!");
+  console.log(`Server is running on ${process.env.PORT || 2121}`);
 });
