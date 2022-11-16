@@ -60,6 +60,10 @@ app.use("/", mainRoutes);
 app.use("/post", postRoutes);
 app.use("/comment", commentRoutes);
 app.use("/users", userRoutes);
+app.use("/feed", mainRoutes);
+app.use("/post", postRoutes);
+app.use("/comment", commentRoutes);
+app.use("/publicProfile", mainRoutes);
 
 //Server Running
 app.listen(process.env.PORT || 2121, () => {

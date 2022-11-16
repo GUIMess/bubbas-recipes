@@ -1,9 +1,10 @@
 {
-  "name": "binary-upload-boom",
+  "name": "bubbas-recipes",
   "version": "1.0.0",
   "description": "Bubbas Recipes",
   "main": "server.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
