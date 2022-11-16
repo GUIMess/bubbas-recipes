@@ -13,13 +13,17 @@ const FeedSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  comment: {
+  caption: {
     type: String,
     required: true,
   },
   likes: {
     type: Number,
     required: true,
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
   },
   createdAt: {
     type: Date,

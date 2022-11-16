@@ -12,6 +12,7 @@ const mainRoutes = require("./routes/main"); // Import main routes
 const postRoutes = require("./routes/posts"); // Import posts routes
 const commentRoutes = require("./routes/comments"); // Import comments routes
 const userRoutes = require("./routes/users"); // Import users routes
+const feedRoutes = require("./routes/feed"); // Import feed routes
 
 //Use .env file in config folder for environment variables
 require('dotenv').config({ path: './config/.env' });
