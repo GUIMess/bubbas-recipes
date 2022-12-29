@@ -66,8 +66,8 @@ form.col-1:nth-child(3)>button:nth-child(1) {
 }
 
 .fw-bold {
-  color: #4920ef;
-  ;
+  color: rgb(113, 226, 239);
+
   font-family: 'PP Pangram Sans Rounded', Arial, Helvetica, sans-serif;
 }
 
