@@ -1,6 +1,8 @@
 <%- include('partials/indexHeader') -%>
 
-<main class="container d-flex flex-column flex-sm-row justify-content-center align-items-center h-100 gap-5">
+<main
+  class="container d-flex flex-column flex-sm-row justify-content-center align-items-center h-100 gap-5"
+>
   <%- include('partials/logo') -%>
 
   <div>
@@ -13,17 +15,32 @@
       <% }) %> <% } %>
       <form action="/login" method="POST">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" />
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            name="email"
+          />
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name="password" />
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            name="password"
+          />
         </div>
-        <button type="submit" class="btn btn-primary">
-          Submit
-        </button>
-        <button type="button" class="btn btn-primary" onclick="window.location.href='/signup'">
+        <button type="submit" class="bn30">Login</button>
+        <button
+          type="button"
+          class="bn30"
+          onclick="window.location.href='/signup'"
+        >
           Sign Up
         </button>
       </form>

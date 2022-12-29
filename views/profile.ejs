@@ -4,7 +4,6 @@
   <div class="row mt-3">
     <div class="col-12 col-md-8">
       <div class="card h-100 text-center">
-        <h4 class="profile-title">Profile</h4>
         <div class="d-flex flex-row justify-content-evenly">
           <div class="profile-pic-container">
             <img class="profile-pic-image" src="<%= profile == undefined  || profile.image == undefined ? 'https://www.shareicon.net/data/128x128/2016/09/01/822751_user_512x512.png' : profile.image%>" alt="" />
@@ -29,7 +28,7 @@
           <div class="form-group text-center">
             <input type="file" class="form-control form-control-file" name="file" required />
           </div>
-          <button type="submit" class="btn btn-outline-primary btn-sm" value="Upload">
+          <button type="submit" class="bn30" value="Upload">
             Submit
           </button>
         </form>
@@ -65,7 +64,7 @@
             <input type="file" class="form-control" id="imageUpload" name="file" />
           </div>
           <div class="text-center">
-            <button type="submit" class="btn btn-primary" value="Upload">
+            <button type="submit" class="bn30" value="Upload">
               Submit
             </button>
           </div>

@@ -54,7 +54,7 @@ module.exports = {
         .sort({ createdAt: 'desc' })
         .populate({ path: 'user', select: 'userName' })
         .lean();
-        console.log(posts)
+      console.log(posts)
       const likes = await Post.aggregate([
         { $match: { user: req.user._id } },
         { $group: { _id: '$user', total: { $sum: '$likes' } } },
@@ -86,6 +86,7 @@ module.exports = {
   createPost: async (req, res) => {
     try {
       // Upload image to cloudinary
+      //will not post without image!!!!!
       const result = await cloudinary.uploader.upload(req.file.path);
 
       await Post.create({
