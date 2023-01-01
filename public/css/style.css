@@ -213,8 +213,8 @@ div.col-6:nth-child(1)>form:nth-child(5)>input:nth-child(1) {
 }
 
 input {
-  background-color: rgb(255, 255, 255);
-  color: #000;
+  background-color: rgb(95, 94, 94);
+  color: rgb(255, 255, 255);
 }
 
 /*Media Query*/
