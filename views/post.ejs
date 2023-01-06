@@ -31,7 +31,7 @@
           <span class="col-6 justify-content-between mt-5">
             <%= comments[i].comment %>
             <br>
-            Posted: <%= comments[i].createdAt %>
+            Posted: <%= comments[i].createdAt.toLocaleDateString("en-US",{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) %>
             <br>
             Likes: <%= comments[i].likes %>
 

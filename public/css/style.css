@@ -201,7 +201,7 @@ form.col-1:nth-child(3)>button:nth-child(1) {
 
 .bn30:hover {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-  box-shadow: 0 4% 4% rgba(128, 128, 128, 0.1);
+  box-shadow: 0 4% 4% rgba(114, 144, 153, 0.59);
 }
 
 .bn30:hover .text {

@@ -1,5 +1,6 @@
 const Comment = require("../models/Comment");
 
+
 module.exports = {
   createComment: async (req, res) => {
     try {
@@ -32,11 +33,11 @@ module.exports = {
   deleteComment: async (req, res) => {
     try {
       const comment = await Comment.findOne({ _id: req.params.id });
-      await Comment.findOneAndDelete({_id: req.params.id})
+      await Comment.findOneAndDelete({ _id: req.params.id })
       console.log('Deleted Comment')
       res.redirect(`/post/${comment.post}`)
     }
-    catch(err) {
+    catch (err) {
       console.log(err)
     }
   }
