@@ -85,14 +85,22 @@ module.exports = {
   },
   createPost: async (req, res) => {
     try {
-      // Upload image to cloudinary
-      //will not post without image!!!!!
-      const result = await cloudinary.uploader.upload(req.file.path);
+      let imageUrl, cloudinaryId;
+      if (req.file) {
+        // An image has been provided, so upload it to cloudinary
+        const result = await cloudinary.uploader.upload(req.file.path);
+        imageUrl = result.secure_url;
+        cloudinaryId = result.public_id;
+      } else {
+        // No image has been provided, so leave the image fields blank
+        imageUrl = '';
+        cloudinaryId = '';
+      }
 
       await Post.create({
         title: req.body.title,
-        image: result.secure_url,
-        cloudinaryId: result.public_id,
+        image: imageUrl,
+        cloudinaryId: cloudinaryId,
         caption: req.body.caption,
         likes: 0,
         user: req.user.id,
@@ -182,25 +190,25 @@ module.exports = {
       console.log(err);
     }
   },
-  updateProfileSong: async (req, res) => {
-    try {
-      const profile = await Profile.findOne({ user: req.user.id });
-      if (profile.songCloudinaryId)
-        await cloudinary.uploader.destroy(profile.songCloudinaryId);
-      const result = await cloudinary.uploader.upload(req.file.path, {
-        resource_type: 'video',
-      });
-      await Profile.findOneAndUpdate(
-        { user: req.user.id },
-        {
-          profileSong: result.secure_url,
-          songCloudinaryId: result.public_id,
-        }
-      );
-      console.log('Profile song has been updated!');
-      res.redirect('/profile');
-    } catch (err) {
-      console.log(err);
-    }
-  },
+  // updateProfileSong: async (req, res) => {
+  //   try {
+  //     const profile = await Profile.findOne({ user: req.user.id });
+  //     if (profile.songCloudinaryId)
+  //       await cloudinary.uploader.destroy(profile.songCloudinaryId);
+  //     const result = await cloudinary.uploader.upload(req.file.path, {
+  //       resource_type: 'video',
+  //     });
+  //     await Profile.findOneAndUpdate(
+  //       { user: req.user.id },
+  //       {
+  //         profileSong: result.secure_url,
+  //         songCloudinaryId: result.public_id,
+  //       }
+  //     );
+  //     console.log('Profile song has been updated!');
+  //     res.redirect('/profile');
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // },
 };

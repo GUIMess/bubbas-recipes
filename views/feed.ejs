@@ -17,7 +17,7 @@
           <p><a href="/publicProfile/<%=posts[i].user._id%>"><%= posts[i].user.userName%></a></p>
           <p class="fw-bold"><%= posts[i].title %></p>
           <p class="fst-italic"><%= posts[i].caption %></p>
-          <p class="fst-italic"><%= posts[i].createdAt.toLocaleDateString("en-US",{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' } %></p>
+          <p class="fst-italic"><%= posts[i].createdAt.toLocaleDateString("en-US",{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) %></p>
         </div>
       </div>
       <% } %>

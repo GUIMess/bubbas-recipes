@@ -11,7 +11,7 @@ const FeedSchema = new mongoose.Schema({
   },
   cloudinaryId: {
     type: String,
-    require: true,
+    required: false,
   },
   caption: {
     type: String,

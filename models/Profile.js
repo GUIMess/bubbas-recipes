@@ -7,7 +7,7 @@ const ProfileSchema = new mongoose.Schema({
   },
   cloudinaryId: {
     type: String,
-    required: true,
+    required: false,
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
