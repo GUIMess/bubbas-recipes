@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const upload = require("../middleware/multer");
-const uploadAudio = require("../middleware/audioMulter");
+// const uploadAudio = require("../middleware/audioMulter");
 const postsController = require("../controllers/posts");
 const { ensureAuth, ensureGuest } = require("../middleware/auth");
 

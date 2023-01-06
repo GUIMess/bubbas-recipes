@@ -20,24 +20,31 @@
 `npm start`
 
 # Features
-- [ ] CSS Styling 
-- [X] Implement delete comment functionality
-- [x] Add profile pic to user profiles 
-- [ ] Allow users to follow other users 
-- [ ] show username and number of likes on feed page
-- [ ] Allow recipes to be public/private 
+
+- [ ] CSS Styling
+- [x] Implement delete comment functionality
+- [x] Add profile pic to user profiles
+- [ ] Allow users to follow other users
+- [x] Show username and number of likes on feed page
+- [ ] Allow recipes to be public/private
 - [ ] implement like functionality for individual comments
-- [ ] implement like functionality for individual recipes
+- [x] implement like functionality for individual recipes
 
 # Bugs
+
 You tell me!
 
 # License
+
 MIT
 
 # Author
+
 [Catalin Siegling](https://github.com/Ant-Acid)
 
+# Links
+
+- [Deployed App](https://bubbas-recipes.herokuapp.com/)
 
 # Screenshots
 
@@ -47,11 +54,6 @@ MIT
 
 [Video](
 
-# Links
-
-- [Deployed App](
-- [Github Repo](
-
 # Technologies Used
 
 - [Node.js](https://nodejs.org/en/)
@@ -60,6 +62,11 @@ MIT
 - [Mongoose](https://mongoosejs.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Heroku](https://www.heroku.com/)
+- [EJS](https://ejs.co/)
+- [Bootstrap](https://getbootstrap.com/)
+- [CSS](https://www.w3schools.com/css/)
+- [HTML](https://www.w3schools.com/html/)
+- [JavaScript](https://www.javascript.com/)
 
 # User Stories
 
@@ -84,11 +91,11 @@ MIT
 
 - [ ] Allow recipes to be public/private
 - [ ] Allow users to follow other users
-- [ ] Allow users to like recipes
+- [x] Allow users to like recipes
 - [ ] Allow users to like comments
 - [x] Allow users to see all recipes
 - [x] Allow users to see all comments
-- [ ] Allow users to see all users 
+- [ ] Allow users to see all users
 - [ ] Allow users to see all recipes by a specific user
 - [ ] Allow users to see all comments by a specific user
 
@@ -109,9 +116,8 @@ MIT
 - [x] Create a server.js file
 - [x] Create a package.json file
 - [x] Create a package-lock.json file
-- [x] Create a models folder  
+- [x] Create a models folder
 - [x] Create a users.js file
 - [x] Create a posts.js file
 - [x] Create a comment.js file
 - [x] Create a controllers folder
-
