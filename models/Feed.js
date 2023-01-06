@@ -7,7 +7,7 @@ const FeedSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    require: true,
+    required: false,
   },
   cloudinaryId: {
     type: String,
